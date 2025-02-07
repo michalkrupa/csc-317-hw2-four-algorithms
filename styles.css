@@ -1,0 +1,50 @@
+@property --sfsu-colors-purple {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #231161;
+}
+
+@property --sfsu-colors-gold {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #C99700;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main, header {
+    padding: 0 3em;
+}
+
+pre {    
+    /* TODO - make mobile friendly */
+    white-space: pre-wrap; 
+}
+
+footer {
+    background-color: var(--sfsu-colors-purple);
+    color: white;
+    padding: 3em;
+    color: var(--sfsu-colors-gold);
+}
+
+footer.inter-300 > p {
+    font-weight: 500;
+}
+
+.inter-300 h1, .inter-300 h2, .inter-300 p {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.source-code-pro-300, .language-javascript {
+    font-family: "Source Code Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
